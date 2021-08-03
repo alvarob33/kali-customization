@@ -1,0 +1,4 @@
+1_Obtener shell igual que en Vulnversity
+2_Buscar flag1 con comando "find / -name user.txt 2>/dev/null"
+3_Buscar SUID como en vulnversity (encontraremos /usr/bin/python)
+4_Buscar como explotar SUID y hacerlo, cuando seamos root buscar root.txt
