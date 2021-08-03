@@ -1,0 +1,6 @@
+#ADMINISTRADOR DE REPOSITORIOS
+sudo apt install software-properties-common
+
+#CARPETAS DE COLORES
+sudo add-apt-repository ppa:costales/folder-color
+sudo apt-get install folder-color
